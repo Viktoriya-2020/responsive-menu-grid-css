@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>graynav</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+<style>
+body{
+	margin:0;
+	padding:0;
+	
+}
+header{
+	height:11vh;
+	width:100%;
+}
+.cont{
+	display:grid;
+	grid-template-columns:repeat(8,1fr);
+	height:11vh;
+	background:black;
+	font-family: 'Lato', sans-serif;
+	
+}
+.cont>div{
+	color:#D6DBDF;
+	font-size:3vh;
+	line-height:10vh;
+}
+.block1,.block2{
+	background:#424949;
+}
+.block3,.block4,.block5,.block6,.block7,.block8{
+	/* background:black;*/
+	text-align:center;
+}
+
+.block2{
+	border-right:1px solid #424949;
+	border-top-right-radius:100px;
+	
+}
+.block1{
+	text-align:right;
+}
+.cont>div:hover{
+	color:white;
+	cursor:pointer;
+}
+@media only screen and (max-width:900px){
+	.cont{
+	grid-template-columns:repeat(6,1fr);
+	height:9vh;
+}
+
+.cont>div{
+	font-size:4vh;
+	line-height: 8vh;
+}
+.block2,.block3{
+	display:none;
+}
+.block1{
+	text-align:center;
+	border-right:1px solid #424949;
+	border-top-right-radius:100px;
+	}
+}
+@media only screen and (max-width:600px){
+header{
+	margin:0 auto;
+}	
+.block1{
+	width:60%;
+	border:1px solid white;
+	border-top-right-radius:100px;
+	border-bottom-left-radius:100px;
+	justify-self:center;
+}
+.cont>div{
+	grid-column:1/9;
+	font-size:3vh;
+	}
+.cont{
+	background:white;
+}
+.block1,.block2{
+	background:white;
+	}
+.cont>div:hover{
+	background:black;
+	
+}	
+	}
+</style>
+<body>
+	<header>
+		<div class="cont">
+			<div class="block1">WebEx</div>
+			<div class="block2"></div>
+			<div class="block3"></div>
+			<div class="block4">Menu</div>
+			<div class="block5">Home</div>
+			<div class="block6">About us</div>
+			<div class="block7">Contact</div>
+			<div class="block8">Forum</div>
+			
+		</div>
+	</header>
+
+
+
+</body>
+</html>
